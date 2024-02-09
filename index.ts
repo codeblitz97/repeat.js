@@ -1,6 +1,6 @@
 import isFunction from 'is-function';
 
-export function repeat(
+export default function repeat(
   action: string | Function,
   times: number,
   delay: number = 1
