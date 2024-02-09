@@ -1,0 +1,41 @@
+{
+  "name": "repeat.js",
+  "version": "1.0.0",
+  "description": "Repeats a process",
+  "main": "index.js",
+  "types": "index.d.ts",
+  "files": [
+    "index.js",
+    "index.d.ts",
+    "index.js.map",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/codeblitz97/repeat.js.git"
+  },
+  "keywords": [
+    "Repeat",
+    "Process",
+    "Repeat.js",
+    "Loop"
+  ],
+  "author": "Mohtasim Alam Sohom",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/codeblitz97/repeat.js/issues"
+  },
+  "homepage": "https://github.com/codeblitz97/repeat.js#readme",
+  "devDependencies": {
+    "@types/is-function": "^1.0.3",
+    "@types/node": "^20.11.17",
+    "typescript": "^5.3.3"
+  },
+  "dependencies": {
+    "is-function": "^1.0.2"
+  }
+}
