@@ -24,7 +24,5 @@ function repeat(action, times, delay) {
         }
     }
 }
-
 exports.default = repeat;
-
 //# sourceMappingURL=index.js.map
