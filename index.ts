@@ -1,13 +1,15 @@
 import isFunction from 'is-function';
 
 export default function repeat(
-  action: string | Function,
+  action: Function | string,
   times: number,
   delay: number = 1
 ) {
   if (isFunction(action)) {
     for (let i = 0; i < times; i++) {
-      setTimeout(action, i * delay);
+      setTimeout(() => {
+        (action as Function)(i);
+      }, i * delay);
     }
   } else {
     if ('string' !== typeof action)

@@ -1,1 +1,1 @@
-export default function repeat(action: string | Function, times: number, delay?: number): void;
+export default function repeat(action: Function | string, times: number, delay?: number): void;

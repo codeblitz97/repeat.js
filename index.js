@@ -7,8 +7,13 @@ var is_function_1 = __importDefault(require("is-function"));
 function repeat(action, times, delay) {
     if (delay === void 0) { delay = 1; }
     if ((0, is_function_1.default)(action)) {
+        var _loop_1 = function (i) {
+            setTimeout(function () {
+                action(i);
+            }, i * delay);
+        };
         for (var i = 0; i < times; i++) {
-            setTimeout(action, i * delay);
+            _loop_1(i);
         }
     }
     else {
